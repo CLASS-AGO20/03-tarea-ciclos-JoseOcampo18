@@ -8,8 +8,19 @@ export default class App {
         return suma;
     }
 
+    sumatoriaSerieDos(numero){
+        let i = 2;
+        let suma = 1;
+
+        while (i < suma) {
+            i++;
+            suma = suma + 1 / i;
+        }
+        return suma;
+    }
+
 }
 
 
 let app = new App();
-console.log(app.sumatoriaSerieUno(5));
+
