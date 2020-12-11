@@ -47,6 +47,33 @@ export default class App {
         return multiplo;
     }
 
+    obtenerImpares(numero1, numero2){
+        let x;
+        let impares = "";
+        let y;
+        let c = ",";
+        let control;
+        let control2;
+        if (numero1 >= numero2){
+            x = numero1;
+            control = numero1;
+            control2 = numero2;
+        }
+        else {
+            x = numero2;
+            control = numero2;
+            control2 = numero1;
+        }
+        do{
+            if(x % 2 !== 0){
+                y = x + "";
+                impares = impares + y + c;
+            }
+            x--;
+        }while(x <= control && x >= control2)
+        return impares.substring(0, impares.length - 1);
+    }
+
 }
 
 
