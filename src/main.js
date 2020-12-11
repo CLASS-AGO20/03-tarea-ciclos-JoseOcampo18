@@ -12,11 +12,25 @@ export default class App {
         let i = 2;
         let suma = 1;
 
-        while (i < suma) {
-            i++;
+        while (i <= numero) {
             suma = suma + 1 / i;
+            i++;
         }
         return suma;
+    }
+
+    esPrimo(numero){
+        let i = 2;
+        do{
+            if(numero % i !== 0){
+                i++;
+            }
+            else{
+                return false;
+                i = numero + 1;
+            }
+        }while(i < numero)
+        return true;
     }
 
 }
