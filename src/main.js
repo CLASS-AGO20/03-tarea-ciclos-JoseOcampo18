@@ -33,6 +33,20 @@ export default class App {
         return true;
     }
 
+    obtenerMultiplos(inicio, fin){
+        let i = inicio;
+        let multiplo = "";
+        let x;
+        do{
+            if(i % 3 == 0){
+                x = i + "";
+                multiplo = multiplo + x;
+            }
+            i++;
+        }while(i >= inicio && i <= fin)
+        return multiplo;
+    }
+
 }
 
 
